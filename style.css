@@ -1,0 +1,162 @@
+body {
+      overflow-x: hidden;
+      transition: background-color 0.3s, color 0.3s;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #222;
+      /*
+      PERBAIKAN: Menambahkan padding atas di body.
+      Ini untuk memberi ruang agar konten pertama tidak tertutup oleh navbar yang menggunakan fixed-top.
+      Tinggi navbar Bootstrap 5 default sekitar 56px. Kita berikan sedikit lebih (70px) agar ada jarak aman.
+      */
+      padding-top: 70px;
+    }
+
+    #nextBtn {
+      background-color: #f001cc; /* Kode warna Ungu Kebiruan (BlueViolet) */
+    border-color: #f001cc;
+    color: white;
+    }
+
+    #nextBtn:hover {
+        background-color: #f001cc; /* Ungu yang lebih gelap saat di-hover */
+        border-color: #f001cc;
+    }
+
+    #startBtn {
+    background-color: #f001cc; /* Kode warna Ungu Kebiruan (BlueViolet) */
+    border-color: #f001cc;
+    color: white;
+    }
+
+    #startBtn:hover {
+        background-color: #f001cc; /* Ungu yang lebih gelap saat di-hover */
+        border-color: #f001cc;
+    }
+
+    /* ======================= NAV BAR ANIMATION ======================= */
+    .navbar {
+      transition: box-shadow 0.3s, background-color 0.3s;
+      backdrop-filter: blur(5px); /* Efek blur pada navbar */
+      background-color: rgba(255, 255, 255, 0.9); /* Sedikit transparan */
+    }
+
+    .navbar .navbar-brand span {
+      color: #f001cc;
+      letter-spacing: 2px;
+    }
+
+    .navbar-nav .nav-link {
+      font-weight: 600; /* Dibuat lebih tebal */
+      transition: color 0.3s, transform 0.2s;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #f001cc;
+      transform: translateY(-2px); /* Efek sedikit naik saat hover */
+    }
+
+    /* ======================= SPLIT TEXT/LOGO ANIMATION (diaktifkan) ======================= */
+    .split-text-container {
+      display: flex;
+      font-size: 1.5rem; /* Disesuaikan untuk brand */
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #222; /* Warna teks di navbar */
+      overflow: hidden;
+    }
+
+    .text-part {
+        display: inline-block;
+        position: relative;
+        /* Hapus transform: translateX(0) karena sudah ada di keyframes */
+        animation-duration: 1.2s; /* Lebih cepat */
+        animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Kurva yang lebih smooth */
+        animation-fill-mode: both; /* Menggunakan both agar tetap di posisi akhir */
+    }
+
+    .text-part.left {
+        animation-name: slide-in-left-logo;
+    }
+
+    .text-part.right {
+        animation-name: slide-in-right-logo;
+    }
+
+    @keyframes slide-in-left-logo {
+        0% { transform: translateX(-100%); opacity: 0; }
+        100% { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes slide-in-right-logo {
+        0% { transform: translateX(100%); opacity: 0; }
+        100% { transform: translateX(0); opacity: 1; }
+    }
+
+
+    /* ======================= HOME SECTION STYLES (Mengganti .hero menjadi #home) ======================= */
+    #home { /* Menggunakan ID #home sesuai di index.html */
+      min-height: 100vh;
+      /* Warna teks diubah agar terlihat jelas di background */
+      color: #222;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      /* Hapus background dan pseudoelement yang tidak diperlukan untuk sementara */
+      background-color: #f8f9fa; /* Warna latar belakang ringan untuk home section */
+    }
+
+    /* Hapus bagian yang tidak digunakan (atau disalahgunakan) */
+    /* .hero::before { ... } */
+    /* .hero .container { ... } */
+    /* @keyframes zoom-background { ... } */
+
+    /* Animasi elemen home (diperbarui agar sesuai dengan ID #home) */
+    #home h1 {
+        animation: slide-up-and-fade 1.2s ease-out forwards;
+        opacity: 0;
+        animation-delay: 0.3s;
+    }
+    #home p.lead {
+        animation: slide-up-and-fade 1.2s ease-out forwards;
+        opacity: 0;
+        animation-delay: 0.8s; /* Sesuaikan delay */
+    }
+    #home .btn {
+        animation: slide-up-and-fade 1.2s ease-out forwards;
+        opacity: 0;
+        animation-delay: 1.3s; /* Sesuaikan delay */
+    }
+
+
+    @keyframes slide-up-and-fade {
+        0% { transform: translateY(20px); opacity: 0; }
+        100% { transform: translateY(0); opacity: 1; }
+    }
+    
+    .hero-content.scrolled {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+
+/* Menambahkan style untuk section lain agar rapi */
+#about {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#foto {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #ffffff;
+}
+
+#foto img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid #eb0099;
+}
