@@ -42,49 +42,56 @@ const questions = [
  * Informasi detail tentang setiap kategori hasil, termasuk judul, deskripsi, dan solusi.
  */
 const categoryInfo = {
+
+    // 3
     zombie: {
         title: 'Zombie-ing', emoji: '🧟',
-        desc: 'Perilaku ini dilakukan ketika pelaku merasa chat mulai membosankan. Seperti; Chat yang mulai dibatasi tidak intens seperti awal perkenalan, topik obrolan menghilang dan hilangnya pembahasan, serta jarak antar mengirim dan membalas chat mulai terasa jauh; awalnya sehari tidak berbalas menjadi seminggu tidak berbalas dan terus berkelanjutan.',
+        desc: 'Berdasarkan penelitian, tipe ini muncul dalam pola hilang—muncul lagi—hilang lagi. Read receipt tanpa balasan terasa mengganggu; seperti kata narasumber, chat-ku bukan novel yang hanya dibaca.',
+        dampak: 'Siklus datang–harap–lenyap–kecewa membuat emosi naik turun tajam. Kamu jadi sering menebak-nebak, menunggu, dan akhirnya lelah hati. Notifikasi kecil bisa memicu harapan, tetapi kerap berakhir kecewa lagi. Fokus harian pun terpecah karena pikiran kembali ke percakapan yang arah dan konsistensinya tidak jelas.',
         solusi: [
-            'Jangan Terpancing: Jangan langsung membalas. Luangkan waktu untuk berpikir mengapa mereka kembali. Apakah Anda ingin melanjutkan hubungan yang berakhir tanpa kejelasan?',
-            'Minta Penjelasan: Jika Anda memilih untuk merespons, tanyakan mengapa mereka menghilang sebelumnya. Jika mereka tidak memberikan alasan yang masuk akal atau meminta maaf, pertimbangkan untuk tidak melanjutkan percakapan.',
-            'Lindungi Diri Anda: Sadari bahwa ada risiko mereka akan menghilang lagi. Ingatlah bagaimana perasaan Anda saat itu dan putuskan apakah Anda ingin mengambil risiko yang sama lagi. Orang yang pernah menghilang dari hidup Anda (ghosting) tiba-tiba kembali menghubungi Anda seolah tidak ada yang pernah terjadi. Mereka mungkin mengirim pesan singkat seperti “Apa kabar?” atau “Sudah lama tidak ngobrol.” Mereka kembali seperti “zombie” yang hidup kembali.'
+            'Kirim satu pesan untuk minta kejelasan—cukup sekali—lalu tetapkan aturan pribadi yang tegas (misalnya, jika pola ini terulang 2–3 kali, komunikasi dihentikan).\n\
+            Setelah itu, ikuti ritme yang lebih sehat: balas secukupnya, arsipkan chat bila perlu, dan pindahkan energi ke orang yang konsisten hadir.'
         ]
     },
+    //2
     curving: {
         title: 'Curving', emoji: '📉',
-        desc: 'Dikatakan sebagai bentuk ghosting paling menyakitkan, dimana ghoster mencari korban hanya untuk menghilangkan bosan disaat luang. Tidak ada keseriusan dan selalu menghindar ketika ditanyai kepastian. Pelaku biasanya meninggalkan korban secara halus dengan bertindak bahwa mereka sudah tidak tertarik namun tetap meninggalkan harapan manis.',
+        desc: 'Berdasarkan penelitian, tipe ini tampak dari hubungan yang pelan-pelan mendingin; ia masih aktif di media sosial, tetapi chat ke kamu semakin pendek, datar, dan tidak berkembang.',
+        dampak: 'Rasanya seperti dilihat publik namun diabaikan secara personal. Perasaan sedih dan kecewa muncul, lalu berubah menjadi ragu terhadap diri sendiri. Melihat dia aktif di medsos sementara pesanmu diabaikan membuat hati makin tidak tenang dan mendorong kebiasaan membandingkan diri dengan orang lain.',
         solusi: [
-            'Perhatikan Tindakan, Bukan Kata-kata: Pahami bahwa tindakan lebih penting daripada janji kosong. Jika tindakan mereka tidak sejalan dengan perkataan, Anda mungkin sedang menjadi korban curving.',
-            'Komunikasikan Perasaan Anda: Bicarakan bagaimana Anda merasa. Anda bisa mengatakan, "Saya merasa komunikasi kita berubah. Apakah ada yang salah?" Ini akan memaksa mereka untuk memberi jawaban yang jujur.',
-            'Hentikan Keterlibatan Emosional: Jika mereka terus mengulangi pola ini, lepaskan keterikatan emosional. Beri mereka waktu dan ruang, dan lihat apakah mereka.'
+            'Kurangi paparan pemicu overthinking: mute atau sembunyikan akunnya sementara agar pikiran tenang. \n\
+            Ungkapkan perasaanmu singkat dan jelas, tanpa drama dan tanpa menekan. Setelah itu, kecilkan investasi emosi. Jika tidak ada perubahan, akhiri dengan sopan dan kembalikan energi ke hal-hal yang kamu kuasai—belajar, kerja, olahraga, dan berkumpul dengan orang yang responsnya nyata.'
         ]
     },
+    //5
     stashing: {
         title: 'Stashing', emoji: '🙈',
-        desc: 'Peristiwa dimana pasangan memiliki hubungan yang bersifat privasi. Dengan kata lain, hubungan ini tidak diketahui oleh public, tidak diperkenalkan dengan teman, kerabat, maupun keluarga. Sehingga, pelaku dapat seenaknya meninggalkan hubungan tanpa kejelasan karena merasa hubunganya belum pasti dan tidak diketahui publik. disembunyikan.',
+        desc: 'Berdasarkan penelitian, tipe ini terasa seperti disembunyikan: kamu tidak dikenalkan ke lingkungannya, balasan singkat lalu senyap lama. Read receipt sering ditafsir sebagai pertanda ketidakcocokan, bukan niat menyakiti.',
+        dampak: 'Di awal terasa sedih dan bingung karena status tidak jelas, tetapi banyak orang kemudian lebih cepat masuk fase menerima. Yang mengganjal biasanya soal visibilitas—merasa hubungan tidak setara karena tidak diakui. Jika dibiarkan, hal ini membuatmu ragu melangkah dan sulit merasa aman dalam relasi.',
         solusi: [
-            'Tanyakan tentang Status Hubungan: Anda berhak mengetahui mengapa hubungan Anda harus dirahasiakan. Tanyakan dengan jelas, "Mengapa kita tidak pernah bertemu teman-temanmu?"',
-            'Tentukan Batasan Waktu: Beri mereka waktu untuk memperkenalkan Anda kepada orang-orang terdekatnya. Jika tidak ada kemajuan, pertimbangkan apakah hubungan ini sepadan.',
-            'Prioritaskan Diri Sendiri: Anda berhak memiliki hubungan yang terbuka dan dihormati. Jika mereka tidak ingin menunjukkan Anda kepada dunia mereka, mungkin mereka tidak menghargai Anda seperti yang Anda pikirkan.'
+           'Sebutkan standar yang kamu butuhkan dengan tenang: hubungan yang diakui, komunikasi yang jelas, dan waktu yang wajar untuk perkenalan. \n\
+           Tetapkan tenggat realistis; jika tidak terpenuhi, akhiri dengan kepala tegak. Jangan bernegosiasi dengan batas pentingmu—lebih baik kosong sementara daripada bertahan di ruang yang menyembunyikanmu.'
         ]
     },
+    //4
     haunting: {
         title: 'Haunting', emoji: '👻',
-        desc: 'Haunting merupakan kondisi dimana korban sering didatangi dan ditinggalkan sesuka hati dengan cara memutus dan menyambung komunikasi.',
+        desc: 'Berdasarkan penelitian, tipe ini terjadi ketika orangnya menghilang dari chat, tetapi sesekali "muncul" lewat jejak digital—melihat story, memberi like, atau menyapa singkat—tanpa kelanjutan.',
+        dampak: 'Sinyal kecil seperti ini membuatmu terus berharap dan sulit menutup cerita. Closure tertunda, proses move on menjadi lambat, dan rasa kendali atas diri menurun. Setiap tanda kehadiran kecil dari dia seperti membuka kembali luka lama, sehingga pemulihan sering terasa maju-mundur.',
         solusi: [
-            'Blokir atau Hapus: Jika kehadirannya terus mengganggu Anda, opsi terbaik adalah menghapus atau memblokir akun media sosial mereka. Ini adalah cara paling efektif untuk mengakhiri siklus ini dan memberi Anda ruang untuk sembuh.',
-            'Batasi Diri Anda: Anda bisa mencoba untuk tidak terlalu terobsesi dengan aktivitas mereka. Berhenti melihat profil mereka dan fokus pada hidup Anda sendiri.',
-            'Tetapkan Batasan: Jika mereka mencoba kembali, Anda bisa menyampaikan dengan tegas bahwa Anda tidak tertarik untuk berkomunikasi lagi. Anda tidak harus memberi penjelasan, cukup sampaikan bahwa Anda sudah pindah.'
+            'Buat rencana closure yang jelas. Jika perlu, kirim satu pesan penutup yang sopan lalu berhenti mengecek. Terapkan "kebersihan digital":\n\
+            mute, sembunyikan, atau unfollow agar pemicu tidak terus muncul. Isi harimu dengan hal menenangkan dan terjadwal—bertemu teman, olahraga ringan, atau hobi—supaya pikiran punya jangkar selain menunggu sinyal yang tidak pasti.'
         ]
     },
+    // 1
     benching: {
         title: 'Benching', emoji: '🪑',
-        desc: 'Situasi dimana seseorang menjalin kasih namun tidak berkomitmen dengan alasan tidak yakin atau ragu terhadap pasanganya tersebut. Hubungan dengan situasi ini tidak memiliki konsistensi yang baik, pelaku sering menghilang tanpa kabar, dan tidak ada kontak tetap diantara keduanya.',
+        desc: 'Berdasarkan penelitian, tipe ghosting ini biasanya terasa seperti digantung: balasan makin lama, banyak janji "nanti" yang tidak terjadi, lalu komunikasi berhenti tanpa penjelasan. Meski tidak selalu di-read, jeda balasan yang panjang membuat jarak emosional terasa jelas.',
+        dampak: 'Kondisi ini membuat kepala penuh tanda tanya. Orang cenderung menyalahkan diri sendiri "kurangku apa?" dan perlahan rasa percaya diri menurun. Menunggu balasan yang tak kunjung datang membuat pikiran sulit lepas dari ponsel, tidur tidak tenang, dan suasana hati mudah turun. Hubungan lain juga bisa ikut terdampak karena energi emosi terkuras untuk menunggu sesuatu yang tidak pasti.',
         solusi: [
-            'Minta Kepastian: Ini mungkin sulit, tetapi penting untuk menanyakan dengan jelas apa niat mereka. Jika mereka terus memberikan jawaban yang tidak jelas, anggap itu sebagai "tidak".',
-            'Prioritaskan Diri Anda: Jangan biarkan mereka memanfaatkan waktu dan emosi Anda. Fokuslah pada orang yang menghargai dan memprioritaskan Anda.',
-            'Hentikan Komunikasi: Jika Anda tidak mendapat komitmen yang jelas, tarik diri dari hubungan tersebut. Hentikan kontak untuk menunjukkan bahwa Anda tidak bisa diperlakukan sebagai pilihan cadangan.'
+            'Beri batas yang jelas:',
+            'Sampaikan harapan sederhana (misalnya, jika tidak ada kabar dalam 1–2 hari, dianggap selesai), lalu patuhi batas itu. Jika pola menggantung berulang, tutup percakapan dengan tenang dan alihkan fokus ke aktivitas yang memulihkan—bertemu teman, hobi, atau rutinitas yang stabil\n\
+            Ingatkan diri bahwa nilai dirimu tidak ditentukan oleh cepat lambatnya orang lain membalas pesan.'
         ]
     },
 };
@@ -156,6 +163,8 @@ const renderQuestion = () => {
     // Atur status tombol navigasi
     prevBtn.disabled = current === 0;
     nextBtn.textContent = current === questions.length - 1 ? 'Selesai' : 'Selanjutnya';
+
+
 };
 
 /**
@@ -183,9 +192,12 @@ const computeResult = () => {
     resultArea.innerHTML = `
         <h2>Hasil: ${info.emoji} ${info.title}</h2>
         <p>${info.desc}</p>
+
+        <h3>Dampak pada Korban:</h3>
+        <p>${info.dampak}</p>
         
         <h3>Solusi Menghadapi:</h3>
-        <ul>${info.solusi.map(s => `<li>${s}</li>`).join('')}</ul>
+        <p>${info.solusi}</p>
         
         <h3>Detail Skor:</h3>
         <p>
@@ -195,7 +207,9 @@ const computeResult = () => {
             Haunting: ${skor.haunting}<br>
             Benching: ${skor.benching}
         </p>
-        <button class="btn primary" onclick="location.reload()">Coba Lagi</button>
+
+       
+        
     `;
 };
 
@@ -222,13 +236,14 @@ prevBtn.onclick = () => {
  * Logika tombol Selanjutnya/Selesai yang lebih andal.
  * Memeriksa status radio button secara DOM langsung.
  */
+
 nextBtn.onclick = () => {
-    // 1. Dapatkan radio input yang tercentang untuk pertanyaan saat ini
+    
     const selectedRadio = options.querySelector(`input[name="q${questions[current].id}"]:checked`);
     
-    // 2. Validasi: Jika tidak ada radio yang terpilih, tampilkan peringatan
+   
     if (!selectedRadio) {
-        alert('Pilih jawaban dulu!');
+        showModernAlert('Pilih jawaban dulu!');
         return;
     }
     
@@ -244,3 +259,31 @@ nextBtn.onclick = () => {
         computeResult();
     }
 };
+
+// ===================================
+// Modal Button Misc
+// ===================================
+
+
+// Fungsi untuk menampilkan modal kustom
+const showModernAlert = (message, title = '⚠️ Peringatan') => {
+    const modal = document.getElementById('modernAlert');
+    document.getElementById('modalTitle').textContent = title;
+    document.getElementById('modalMessage').textContent = message;
+    modal.style.display = 'block';
+}
+
+// Fungsi untuk menyembunyikan modal kustom
+const closeModernAlert = () => {
+    const modal = document.getElementById('modernAlert');
+    modal.style.display = 'none';
+}
+
+
+// Opsional: Tutup modal ketika pengguna mengklik di luar kotak modal
+window.onclick = (event) => {
+    const modal = document.getElementById('modernAlert');
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
